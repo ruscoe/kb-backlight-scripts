@@ -21,4 +21,6 @@ then
 elif [ $current_first_color == $third_color ]
 then
   eval "${kb_backlight_path} color ${second_color} ${third_color} ${first_color}"
+else
+  eval "${kb_backlight_path} color ${first_color} ${second_color} ${third_color}"
 fi
